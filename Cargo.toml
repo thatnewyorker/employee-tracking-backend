@@ -1,0 +1,15 @@
+[package]
+name = "employee-tracking-backend"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+axum = "0.8.4"
+dotenvy = "0.15.7"
+serde = { version = "1.0.219", features = ["derive"] }
+serde_json = "1.0.142"
+sqlx = { version = "0.8.6", features = ["runtime-tokio", "tls-native-tls"] }
+tokio = { version = "1.47.1", features = ["full", "rt-multi-thread", "signal"] }
+tower-http = { version = "0.6.6", features = ["trace"] }
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3.19", features = ["env-filter"] }
